@@ -7,16 +7,16 @@ padding: 0px;
 
 .logo{
 position: absolute;
-top: 10px;
+top: 20px;
 z-index: 0;
-margin: 20px;
+margin-right: 20px;
 }
 
 
 
 
 h1{
-    margin-top:50px;
+    margin-top:25px;
     margin-bottom: 25px;
     text-align: center;
     font-family: $title-font;
@@ -69,6 +69,8 @@ p{
     text-align: right !important;
     z-index: 0;
     padding: 20px;
+    font-size: 2rem !important;
+    margin-bottom:0px !important;
 }
 
 .page-content{
