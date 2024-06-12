@@ -358,3 +358,12 @@
 .accordion .accordion-button:focus {
   box-shadow: 0 0 0 0;
 }
+
+.pdi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pdi p {
+  text-align: center;
+}

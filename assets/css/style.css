@@ -533,6 +533,15 @@ input[type=range]::-moz-range-thumb {
   box-shadow: 0 0 0 0;
 }
 
+.pdi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pdi p {
+  text-align: center;
+}
+
 .bottom-space {
   height: 300px;
 }
@@ -553,6 +562,7 @@ input[type=range]::-moz-range-thumb {
   width: 80%;
   padding: 10px 20px;
   margin: 0px 10%;
+  border-color: #0d6efd;
 }
 
 .true-false-boxes {
