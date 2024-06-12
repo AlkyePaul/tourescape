@@ -1,0 +1,41 @@
+@import "config.scss";
+
+.bottom-space{
+    height: 300px;
+}
+
+.multiple-option-item{
+min-height:50px;
+width:60%;
+border: 1px $border-color solid;
+border-radius: 4px;
+margin: 20px auto;
+padding: 20px;
+}
+
+
+.right-word-container {
+    p {
+        text-align: center;
+    }
+
+    input{
+        width: 80%;
+        padding: 10px 20px;
+        margin: 0px 10%;
+    }
+}
+
+
+.true-false-boxes{
+  display: flex;
+  justify-content: space-around;
+  
+    div{
+        width: 33%;
+        padding: 20px;
+    border: 1px solid $border-color;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}}

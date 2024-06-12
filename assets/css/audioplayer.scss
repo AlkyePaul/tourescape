@@ -1,0 +1,53 @@
+@import "config.scss";
+
+.audio-player {
+    background-color:$secondary-color;
+    border: 2px solid $terziary-color;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    margin: 25px auto;
+    color:$light-text;
+  
+    button,
+    input[type="range"] {
+      margin: 10px 0;
+      border: none;
+      background: none;  /* Cambia background-color: none; in background: none; */
+      padding: 0;        /* Assicurati che non ci sia padding */
+      outline: none;     /* Rimuove il contorno */
+      cursor: pointer;
+    }
+    
+    button svg {
+      display: block;    /* Assicura che l'SVG riempia il bottone */
+    }
+  
+    #seek-bar {
+      width: 100%;
+    }
+  }
+
+  path{
+    fill:$light-text;
+    stroke:$light-text;
+  }
+
+  /* Colore della barra di ricerca */
+input[type="range"]::-webkit-slider-runnable-track {
+    border-radius: 5px;
+    background-color:white ; /* Imposta il colore desiderato */
+  }
+  
+  /* Colore del cursore della barra di ricerca */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;}
+
+  input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  

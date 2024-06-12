@@ -1,0 +1,64 @@
+@import "config";
+.btn-end-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    button{
+        padding:20px;
+        margin-top: 50px;
+        border-radius: 4px;
+        border-color: $border-color;
+        background-color:$primary-light;
+    }
+    .next-chapter{
+        
+            width: 80%;
+            background-color: $primary-color;
+            border-color: $secondary-color;
+            animation: pulse 2s infinite;
+
+        
+
+    a{
+        color: $light-text;
+        text-decoration: none;
+       font-size: 1.1rem;
+       font-weight: bold;
+        }
+    }}
+
+    .back-btn{
+            width: 50%;
+
+        a{
+            color: $secondary-color;
+            text-decoration: none;
+         
+            :hover{
+                color:$secondary-color;
+            }
+            :visited{
+                color:$primary-color;
+            }
+        }
+
+    }
+
+
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 0 10px 20px rgba(0, 123, 255, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+        }
+      }

@@ -1,0 +1,11 @@
+.btn-end-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-end-page button {
+  padding: 20px;
+  margin-top: 50px;
+  width: 50%;
+  background-color: white;
+}
