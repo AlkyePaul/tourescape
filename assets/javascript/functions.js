@@ -1,7 +1,15 @@
 
 
-// script del riproduttore audio
+
+
 document.addEventListener("DOMContentLoaded", function() {
+
+//scroll into view on click
+
+
+// script del riproduttore audio
+
+
     var audio = document.getElementById("audio");
     var playPauseButton = document.getElementById("play-pause");
     var playIcon = document.getElementById("play-icon");
