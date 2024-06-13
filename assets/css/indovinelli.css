@@ -20,6 +20,9 @@
   margin: 0px 10%;
   border-color: #0d6efd;
 }
+.right-word-container input:focus-visible {
+  outline: #EA4F53 auto 1px;
+}
 
 .true-false-boxes {
   display: flex;

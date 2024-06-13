@@ -24,6 +24,11 @@ padding: 20px;
         padding: 10px 20px;
         margin: 0px 10%;
     border-color: $terziary-color;
+    
+        &:focus-visible{
+            outline:$primary-color auto 1px;
+    
+    }
     }
 
 }
