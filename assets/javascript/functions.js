@@ -5,7 +5,14 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 //scroll into view on click
+var clickable = document.querySelectorAll('.clickable');
 
+clickable.forEach(function(element) {
+    element.addEventListener("click", function() {
+        var elementTop = this.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: elementTop, behavior: 'smooth' });
+    });
+});
 
 // script del riproduttore audio
 
