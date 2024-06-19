@@ -91,6 +91,13 @@ section{
     z-index: 2;
 }
 
+
+//functional classes
+
+.hidden{
+    display: none !important;
+}
+
 @import "audioplayer.scss";
 @import "btn-and-links";
 @import "config-bootstrap";

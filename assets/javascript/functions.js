@@ -70,3 +70,29 @@ clickable.forEach(function(element) {
         durationDisplay.textContent = minutes + ":" + seconds;
     }
 });
+
+
+//pswd
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the password input field and the start button
+    const passwordInput = document.getElementById('parolachiave');
+    const startButton = document.getElementById('start-play');
+
+    // Function to check the password
+    function checkPassword() {
+        return passwordInput.value === 'ciao';
+    }
+
+    // Add a click event listener to the send password button
+    const sendPasswordBtn = document.getElementById('sendPasswordBtn');
+    sendPasswordBtn.addEventListener('click', function() {
+        if (checkPassword()) {
+            startButton.classList.remove('hidden');
+            // Additional actions to take when the password is correct and the game starts
+            console.log('Password is correct. Starting the game.');
+        } else {
+            // In case the password is incorrect
+            console.log('Password is incorrect. Please try again.');
+        }
+    });
+});
