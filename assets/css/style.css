@@ -83,6 +83,10 @@ section {
   display: none !important;
 }
 
+.invisible {
+  visibility: hidden !important;
+}
+
 .audio-player {
   background-color: #002041;
   border: 2px solid #0d6efd;

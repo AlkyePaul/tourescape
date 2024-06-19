@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Select the password input field and the start button
     const passwordInput = document.getElementById('parolachiave');
     const startButton = document.getElementById('start-play');
+    const passErrata = document.getElementById('pass-errata');
 
     // Function to check the password
     function checkPassword() {
@@ -89,10 +90,13 @@ document.addEventListener("DOMContentLoaded", function() {
         if (checkPassword()) {
             startButton.classList.remove('hidden');
             // Additional actions to take when the password is correct and the game starts
-            console.log('Password is correct. Starting the game.');
+            passErrata.classList.add("invisible");
+
         } else {
             // In case the password is incorrect
-            console.log('Password is incorrect. Please try again.');
+            passErrata.classList.remove("invisible");
+
+            passErrata.innerHTML=("Password errata!");
         }
     });
 });

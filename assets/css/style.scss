@@ -98,6 +98,10 @@ section{
     display: none !important;
 }
 
+.invisible{
+    visibility: hidden !important;
+}
+
 @import "audioplayer.scss";
 @import "btn-and-links";
 @import "config-bootstrap";
