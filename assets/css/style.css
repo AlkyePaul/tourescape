@@ -136,6 +136,17 @@ input[type=range]::-moz-range-thumb {
   appearance: none;
 }
 
+.btn-puzzle {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: #0d6efd;
+  background-color: white;
+  color: #EA4F53;
+  font-weight: bold;
+  width: 30%;
+  margin-top: 25px;
+}
+
 .btn-send-pass {
   padding: 10px 20px;
   border-radius: 4px;
@@ -590,6 +601,48 @@ input[type=range]::-moz-range-thumb {
   height: 300px;
 }
 
+.true-false-section .true-false-boxes {
+  display: flex;
+  justify-content: space-around;
+}
+.true-false-section .true-false-boxes .vero {
+  background-color: greenyellow;
+}
+.true-false-section .true-false-boxes .falso {
+  background-color: red;
+}
+.true-false-section .true-false-boxes div {
+  width: 33%;
+  padding: 20px;
+  border: 1px solid #0d6efd;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.true-false-section .true-false-box.correct {
+  transform: scale(1.1);
+}
+.true-false-section .true-false-box.incorrect {
+  animation: shake 0.3s;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .multiple-option-item {
   min-height: 50px;
   width: 60%;
@@ -599,8 +652,16 @@ input[type=range]::-moz-range-thumb {
   padding: 20px;
 }
 
-.right-word-container p {
-  text-align: center;
+.right-word-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-word-container label {
+  text-align: left;
+}
+.right-word-container .incorrect {
+  animation: shake 0.3s;
 }
 .right-word-container input {
   width: 80%;
@@ -610,17 +671,4 @@ input[type=range]::-moz-range-thumb {
 }
 .right-word-container input:focus-visible {
   outline: #EA4F53 auto 1px;
-}
-
-.true-false-boxes {
-  display: flex;
-  justify-content: space-around;
-}
-.true-false-boxes div {
-  width: 33%;
-  padding: 20px;
-  border: 1px solid #0d6efd;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
 }

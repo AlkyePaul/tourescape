@@ -1,8 +1,54 @@
 @import "config.scss";
 
+
+
+
+
 .bottom-space{
     height: 300px;
 }
+
+
+.true-false-section{
+    .true-false-boxes{
+        display: flex;
+        justify-content: space-around;
+
+        .vero{
+            background-color: greenyellow;
+            
+        }
+        .falso{
+            background-color: red;
+        }
+          div{
+              width: 33%;
+              padding: 20px;
+          border: 1px solid $border-color;
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: bold;
+      }}
+    
+    .true-false-box.correct {
+        transform: scale(1.1);
+    }
+    
+    .true-false-box.incorrect {
+        animation: shake 0.3s;
+    }
+    
+    
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+        100% { transform: translateX(0); }
+    }
+    
+}
+
 
 .multiple-option-item{
 min-height:50px;
@@ -15,8 +61,13 @@ padding: 20px;
 
 
 .right-word-container {
-    p {
-        text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+label{      text-align: left;
+    }
+    .incorrect{
+        animation: shake 0.3s;
     }
 
     input{
@@ -34,15 +85,3 @@ padding: 20px;
 }
 
 
-.true-false-boxes{
-  display: flex;
-  justify-content: space-around;
-  
-    div{
-        width: 33%;
-        padding: 20px;
-    border: 1px solid $border-color;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}}

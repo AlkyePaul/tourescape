@@ -99,4 +99,35 @@ document.addEventListener("DOMContentLoaded", function() {
             passErrata.innerHTML=("Password errata!");
         }
     });
+
+
+
+//indovinelli
+
+    // function to show the next indovinelli item
+    function showNextIndovinelliItem(event) {
+        const clickedDiv = event.target;
+        const nextDivId = clickedDiv.dataset.toggleId;
+        if (!nextDivId) {
+            console.error("nextDivId is null or undefined");
+            return;
+        }
+        const nextDiv = document.getElementById(nextDivId);
+        if (!nextDiv) {
+            console.error("Element with id " + nextDivId + " not found");
+            return;
+        }
+
+        // hide the clicked div
+        clickedDiv.hidden = true;
+
+        // show the next div
+        nextDiv.hidden = false;
+    }
+
+    // add click event listener to the divs with class "right-answer"
+    const rightAnswerDivs = document.querySelectorAll('.right-answer');
+    rightAnswerDivs.forEach(div => {
+        div.addEventListener('click', showNextIndovinelliItem);
+    });
 });

@@ -1,6 +1,15 @@
 @import "config";
 
-
+.btn-puzzle {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: $border-color;
+  background-color: white;
+  color: $primary-color;
+  font-weight: bold;
+  width: 30%;
+  margin-top: 25px;
+}
 .btn-send-pass {
   padding: 10px 20px;
   border-radius: 4px;
